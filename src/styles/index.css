@@ -766,6 +766,7 @@ header nav a {
 @media (max-width: 767px) {
   .housing-collapse .collapse-description p {
     font-size: 12px;
+    line-height: 17px;
   }
 }
 .housing-collapse .collapse-description ul {
