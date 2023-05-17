@@ -1,0 +1,38 @@
+.tags-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.tag-item{
+    background: #FF6060;
+border-radius: 10px;
+padding: 0 30px;
+height: 25px;
+font-weight: 500;
+font-size: 14px;
+line-height: 142.6%;
+color: #fff;
+display: flex;
+align-items: center;
+}
+
+/* MEDIA QUERIES TABLET */
+
+@media screen and (max-width: 991px) {}
+
+/* MEDIA QUERIES MOBILE */
+
+@media screen and (max-width: 767px) {
+    .tags-container {
+        flex-flow: row wrap;
+
+    }
+    .tag-item{
+        border-radius: 5px;
+        font-size: 10px;
+        flex-wrap: nowrap;
+    }
+
+}

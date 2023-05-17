@@ -1,0 +1,24 @@
+.rate-container{
+    margin-top: 27px;
+    display: flex;
+    gap: 15px;
+}
+
+/* MEDIA QUERIES TABLET */
+
+@media screen and (max-width: 991px) {}
+
+/* MEDIA QUERIES MOBILE */
+
+@media screen and (max-width: 767px) {
+    .rate-container{
+        gap: 6.5px;
+
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+    }
+    .rate-container img{
+        height: 13px;
+    }
+}

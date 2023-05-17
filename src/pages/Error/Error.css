@@ -1,0 +1,57 @@
+.error-title {
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    color: #FF6060;
+    text-align: center;
+    padding: 0;
+    margin: 169px 0 0 0;
+}
+
+
+
+.error-message {
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    text-align: center;
+
+    color: #FF6060;
+
+    padding: 0;
+    margin: 66px 0 0 0;
+}
+
+.error-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    text-decoration-line: underline;
+    text-align: center;
+    color: #FF6060;
+    margin: 182px 0 0 0;
+}
+
+/* MEDIA QUERIES TABLET */
+
+@media screen and (max-width: 991px) {}
+
+/* MEDIA QUERIES MOBILE */
+
+@media screen and (max-width: 767px) {
+main{
+    margin: 0 auto;
+    width: 100%;
+}
+.error-title{
+    font-size: 96px;
+}
+.error-message{
+    font-size: 18px;
+    margin: 12px 40px;
+}
+.error-link{
+    font-size: 14px;
+}
+}
