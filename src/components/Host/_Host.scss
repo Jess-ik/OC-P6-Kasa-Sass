@@ -1,0 +1,28 @@
+.host-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.host-name{
+    @include font-styling(500, 18px, $kasa-red);
+    width: min-content;
+    text-align: right;
+    margin: 0;
+    @include phone-size{
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+
+.host-img{
+    width: 64px;
+    height: 64px;
+    border-radius: 30px;
+    @include phone-size {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;       
+    }
+}

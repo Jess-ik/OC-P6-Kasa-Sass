@@ -1,4 +1,3 @@
-import './Slideshow.css'
 import { useState } from 'react'
 
 

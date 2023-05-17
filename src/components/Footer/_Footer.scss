@@ -1,0 +1,20 @@
+footer {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 210px;
+    gap: 30px;
+
+    p {
+        @include font-styling (500, 24px, #fff);
+        margin: 0;
+        padding: 0;
+        @include phone-size {
+            font-size: 12px;
+        }
+    }
+
+}

@@ -1,0 +1,18 @@
+.rate-container {
+    margin-top: 27px;
+    display: flex;
+    gap: 15px;
+
+    @include phone-size {
+        gap: 6.5px;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+    }
+
+    img {
+        @include phone-size {
+            height: 13px;
+        }
+    }
+}

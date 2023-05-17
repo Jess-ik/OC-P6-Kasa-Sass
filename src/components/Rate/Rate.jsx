@@ -1,8 +1,3 @@
-import "./Rate.css";
-
-
-
-
 function Rate({rating}) {
 
 

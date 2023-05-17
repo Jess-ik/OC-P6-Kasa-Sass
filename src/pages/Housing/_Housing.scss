@@ -1,0 +1,130 @@
+.housing-container {
+    h1 {
+        @include font-styling(500, 36px, $kasa-red);
+        margin: 5px 0 0 0;
+        padding: 0;
+
+        @include phone-size {
+            line-height: 120%;
+            font-size: 18px;
+        }
+    }
+
+    .housing-header {
+        display: flex;
+        margin-top: 25px;
+        justify-content: space-between;
+
+        @include phone-size {
+            margin-top: 16px;
+            flex-direction: column;
+        }
+
+        p {
+            @include font-styling(500, 18px, $kasa-red);
+            margin: 0;
+            padding: 0;
+
+            @include phone-size {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .header-col {
+        padding-right: 5px;
+    }
+
+    .col-2 {
+        @include phone-size {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+        }
+    }
+
+}
+
+.housing-collapse {
+    display: flex;
+    gap: 76px;
+    margin-top: 25px;
+
+    @include tablet-size {
+        gap: 20px;
+    }
+
+    @include phone-size {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 16px;
+    }
+
+    .collapse-container {
+        @include phone-size {
+            width: 100%;
+        }
+    }
+
+    .collapse-header {
+        height: 52px;
+        border-radius: 10px;
+        padding-right: 10px;
+
+        @include phone-size {
+            height: 30px;
+            border-radius: 5px;
+            padding: 0 9.5px 0 11.5px;
+        }
+
+        h2 {
+            @include font-styling(500, 18px, #fff);
+
+            @include phone-size {
+                font-size: 13px;
+            }
+        }
+
+        img {
+            @include phone-size {
+                width: 16px;
+            }
+        }
+
+    }
+
+    .collapse-description {
+        @include phone-size {
+            padding: 20px 12px;
+
+        }
+
+        p {
+            @include font-styling(400, 18px, $kasa-red);
+            margin-top: 10px;
+
+            @include phone-size {
+                font-size: 12px;
+            }
+        }
+
+        ul {
+            @include font-styling(400, 18px, $kasa-red);
+            margin-top: 10px;
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+
+            @include phone-size {
+                font-size: 12px;
+            }
+
+            li {
+                display: inline;
+            }
+        }
+    }
+}

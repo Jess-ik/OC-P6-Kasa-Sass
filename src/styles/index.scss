@@ -1,5 +1,5 @@
-@import './var';
-@import './main';
+@import './utils/var';
+@import './utils/main';
 
 @import '../components/Banner/Banner';
 @import '../components/Cards/Cards';
@@ -13,7 +13,6 @@
 
 @import '../pages/About/About';
 @import '../pages/Error/Error';
-@import '../pages/Home/Home';
 @import '../pages/Housing/Housing';
 
 

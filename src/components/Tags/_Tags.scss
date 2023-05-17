@@ -1,0 +1,25 @@
+.tags-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+    @include phone-size {
+        flex-flow: row wrap;
+    }
+}
+
+.tag-item {
+    background: #FF6060;
+    border-radius: 10px;
+    padding: 0 30px;
+    height: 25px;
+    @include font-styling (500, 14px, #fff);
+    display: flex;
+    align-items: center;
+
+    @include phone-size {
+        border-radius: 5px;
+        font-size: 10px;
+        flex-wrap: nowrap;
+    }
+}

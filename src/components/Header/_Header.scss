@@ -1,0 +1,58 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 100px 0 100px;
+  max-width: 1440px;
+
+  @include tablet-size {
+    padding: 20px 50px 0 50px;
+  }
+
+  @include phone-size {
+    padding: 20px 20px 0 20px;
+    text-transform: uppercase;
+  }
+
+  img {
+    @include phone-size {
+      height: 47px;
+    }
+  }
+
+  nav {
+    @include phone-size {
+      display: flex;
+    }
+
+    ul {
+      display: flex;
+      gap: 57px;
+
+      @include phone-size {
+        width: 100%;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+    }
+
+    li,
+    a {
+      @include font-styling (500, 24px, $kasa-red);
+
+      display: flex;
+      align-items: flex-end;
+      text-align: right;
+      text-decoration: none;
+
+      @include phone-size {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.active {
+  text-decoration: underline;
+}

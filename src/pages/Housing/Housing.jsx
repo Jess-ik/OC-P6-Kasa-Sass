@@ -1,6 +1,5 @@
 
 import { useParams } from 'react-router-dom'
-import "./Housing.css";
 import HousingDatas from '../../data/logements.json'
 import Collapse from "../../components/Collapse/Collapse";
 import Slideshow from '../../components/Slideshow/Slideshow';
@@ -32,7 +31,7 @@ function Housing() {
         <div className='housing-header'>
           <div className='header-col'>
             <h1>{title}</h1>
-            <h2>{location}</h2>
+            <p>{location}</p>
             <Tags tags={tags}/>
           </div>
           <div className='header-col col-2'>

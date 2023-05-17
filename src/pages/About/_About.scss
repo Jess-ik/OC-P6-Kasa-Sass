@@ -1,0 +1,70 @@
+.about-main {
+    .banner-img {
+        img {
+            @include phone-size {
+                height: 223px;
+            }
+        }
+    }
+}
+
+
+
+.about-collapse {
+    margin-top: 30px;
+
+    @include tablet-size {
+        margin-top: 20px;
+    }
+
+    @include phone-size {
+        margin-top: 20px;
+    }
+
+    .collapse-container {
+        margin-bottom: 30px;
+
+        @include tablet-size {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        @include phone-size {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+
+    .collapse-header {
+        @include phone-size {
+            height: 30px;
+            padding: 0 7px 0 12px;
+        }
+
+        h2 {
+            @include phone-size {
+                font-size: 13px;
+            }
+        }
+
+        img {
+            @include phone-size {
+                width: 16px;
+            }
+        }
+    }
+
+    .collapse-description {
+        @include phone-size {
+            padding: 24px 12px 20px 12px;
+        }
+
+        p {
+            line-height: 34px;
+
+            @include phone-size {
+                font-size: 12px;
+            }
+        }
+    }
+}

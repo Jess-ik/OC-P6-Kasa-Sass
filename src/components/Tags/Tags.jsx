@@ -1,6 +1,3 @@
-import "./Tags.css";
-
-
 function Tags({ tags }) {
 
     return (

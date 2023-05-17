@@ -10,24 +10,18 @@ body {
     line-height: 142.6%;
 }
 
-
-
 main {
     margin: 0 auto;
     padding: 100px;
     padding-top: 0;
     max-width: 1440px;
+    box-sizing: border-box;
 
-    @media screen and (max-width: 991px) {
-        main {
-            padding: 20px 50px 50px 50px;
-        }
+    @include tablet-size {
+        padding: 20px 50px 50px 50px;
     }
 
-    @media screen and (max-width: 767px) {
-        main {
-            padding: 20px;
-
-        }
+    @include phone-size {
+        padding: 20px;
     }
 }

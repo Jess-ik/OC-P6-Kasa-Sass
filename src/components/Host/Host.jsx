@@ -1,6 +1,3 @@
-import "./Host.css";
-
-
 function Host({ host }) {
     return (
       <div className="host-container">
