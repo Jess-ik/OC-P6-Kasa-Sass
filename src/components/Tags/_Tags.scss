@@ -17,6 +17,11 @@
     display: flex;
     align-items: center;
 
+    @include tablet-size{
+        flex-wrap: nowrap;
+        padding: 0 20px;
+    }
+
     @include phone-size {
         border-radius: 5px;
         font-size: 10px;

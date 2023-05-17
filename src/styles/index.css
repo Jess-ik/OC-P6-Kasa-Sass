@@ -97,6 +97,8 @@ main {
 @media (max-width: 1024px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+    padding: 36px;
+    gap: 36px;
   }
 }
 @media (max-width: 767px) {
@@ -117,6 +119,7 @@ main {
 @media (max-width: 767px) {
   .card {
     margin-bottom: 20px;
+    aspect-ratio: 1/0.75;
   }
 }
 .card:hover {
@@ -302,6 +305,13 @@ header nav a {
   text-align: right;
   margin: 0;
 }
+@media (max-width: 1024px) {
+  .host-name {
+    font-size: 16px;
+    line-height: 100%;
+    margin: 0;
+  }
+}
 @media (max-width: 767px) {
   .host-name {
     font-size: 12px;
@@ -313,6 +323,13 @@ header nav a {
   width: 64px;
   height: 64px;
   border-radius: 30px;
+}
+@media (max-width: 1024px) {
+  .host-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 32px;
+  }
 }
 @media (max-width: 767px) {
   .host-img {
@@ -333,6 +350,11 @@ header nav a {
     justify-content: flex-end;
     align-items: center;
     margin: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .rate-container img {
+    height: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -472,6 +494,12 @@ header nav a {
   display: flex;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .tag-item {
+    flex-wrap: nowrap;
+    padding: 0 20px;
+  }
+}
 @media (max-width: 767px) {
   .tag-item {
     border-radius: 5px;
@@ -520,6 +548,11 @@ header nav a {
     padding: 0 7px 0 12px;
   }
 }
+@media (max-width: 1024px) {
+  .about-collapse .collapse-header h2 {
+    font-size: 20px;
+  }
+}
 @media (max-width: 767px) {
   .about-collapse .collapse-header h2 {
     font-size: 13px;
@@ -538,9 +571,16 @@ header nav a {
 .about-collapse .collapse-description p {
   line-height: 34px;
 }
+@media (max-width: 1024px) {
+  .about-collapse .collapse-description p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 @media (max-width: 767px) {
   .about-collapse .collapse-description p {
     font-size: 12px;
+    line-height: 17px;
   }
 }
 
@@ -591,23 +631,15 @@ header nav a {
   color: inherit;
 }
 
-.housing-container h1 {
-  font-weight: 500;
-  font-size: 36px;
-  color: #FF6060;
-  margin: 5px 0 0 0;
-  padding: 0;
-}
-@media (max-width: 767px) {
-  .housing-container h1 {
-    line-height: 120%;
-    font-size: 18px;
-  }
-}
 .housing-container .housing-header {
   display: flex;
   margin-top: 25px;
   justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .housing-container .housing-header {
+    margin-top: 16px;
+  }
 }
 @media (max-width: 767px) {
   .housing-container .housing-header {
@@ -615,15 +647,40 @@ header nav a {
     flex-direction: column;
   }
 }
-.housing-container .housing-header p {
+.housing-container .housing-header h1 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #FF6060;
+  margin: 5px 0 0 0;
+  padding: 0;
+  line-height: 51px;
+}
+@media (max-width: 1024px) {
+  .housing-container .housing-header h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .housing-container .housing-header h1 {
+    line-height: 120%;
+    font-size: 18px;
+  }
+}
+.housing-container .housing-header .housing-location {
   font-weight: 500;
   font-size: 18px;
   color: #FF6060;
   margin: 0;
   padding: 0;
 }
+@media (max-width: 1024px) {
+  .housing-container .housing-header .housing-location {
+    margin-top: 16px;
+  }
+}
 @media (max-width: 767px) {
-  .housing-container .housing-header p {
+  .housing-container .housing-header .housing-location {
     font-size: 14px;
   }
 }
@@ -700,6 +757,11 @@ header nav a {
   font-size: 18px;
   color: #FF6060;
   margin-top: 10px;
+}
+@media (max-width: 1024px) {
+  .housing-collapse .collapse-description p {
+    line-height: 26px;
+  }
 }
 @media (max-width: 767px) {
   .housing-collapse .collapse-description p {

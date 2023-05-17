@@ -11,6 +11,9 @@
     }
 
     img {
+        @include tablet-size{
+            height: 20px;
+        }
         @include phone-size {
             height: 13px;
         }

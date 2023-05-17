@@ -10,6 +10,12 @@
     width: min-content;
     text-align: right;
     margin: 0;
+
+    @include tablet-size{
+        font-size: 16px;
+        line-height: 100%;
+        margin: 0;
+    }
     @include phone-size{
         font-size: 12px;
         line-height: 17px;
@@ -20,6 +26,11 @@
     width: 64px;
     height: 64px;
     border-radius: 30px;
+    @include tablet-size{
+        width: 48px;
+        height: 48px;
+        border-radius: 32px;   
+    }
     @include phone-size {
         width: 32px;
         height: 32px;

@@ -31,7 +31,7 @@ function Housing() {
         <div className='housing-header'>
           <div className='header-col'>
             <h1>{title}</h1>
-            <p>{location}</p>
+            <p className='housing-location'>{location}</p>
             <Tags tags={tags}/>
           </div>
           <div className='header-col col-2'>

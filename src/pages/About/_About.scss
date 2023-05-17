@@ -42,6 +42,9 @@
         }
 
         h2 {
+            @include tablet-size {
+                font-size: 20px;
+            }
             @include phone-size {
                 font-size: 13px;
             }
@@ -62,8 +65,14 @@
         p {
             line-height: 34px;
 
+            @include tablet-size{
+                font-size: 20px;
+                line-height: 30px;
+            }
+
             @include phone-size {
                 font-size: 12px;
+                line-height: 17px;
             }
         }
     }

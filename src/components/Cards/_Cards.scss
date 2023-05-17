@@ -9,6 +9,8 @@
 
    @include tablet-size {
      grid-template-columns: repeat(2, 1fr);
+     padding: 36px;
+     gap: 36px;
    }
 
    @include phone-size {
@@ -27,6 +29,7 @@
 
    @include phone-size {
      margin-bottom: 20px;
+     aspect-ratio: 1/0.75;
    }
 
    &:hover {
