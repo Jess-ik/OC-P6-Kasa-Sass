@@ -1,26 +1,26 @@
 function Rate({rating}) {
 
-
+    // Create a range of 5 stars rating 
     const range = [1, 2, 3, 4, 5]
 
     return (
         <div className="rate-container">
-            { // On utilise .map sur la variable en fonction de la donnée en paramètre 
-                range.map((element) =>
+            { // .map the range of possible stars 
+                range.map((stars) =>
 
-                    // On affiche une étoile pleine suivant la valeur en paramère
-                    rating >= element ? (
+                    // for each stars from range, if rating from HousingData is >= we create a red star
+                    rating >= stars ? (
                         <img
                             src="/assets/red-star.svg"
-                            alt="Etoile pleine"
-                            key={element.toString()}
+                            alt="Etoile rouge"
+                            key={stars.toString()}
                         />
                     ) : (
-                        // Par défaut on complète par une étoile vide
+                        // for each stars from range, if rating from HousingData is NOT >= we create a grey star
                         <img
                         src="/assets/grey-star.svg"
-                            alt="Etoile vide"
-                            key={element.toString()}
+                            alt="Etoile grise"
+                            key={stars.toString()}
                         />
                     )
                 )}

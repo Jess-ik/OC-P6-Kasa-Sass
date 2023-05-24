@@ -49,6 +49,9 @@ header {
       @include phone-size {
         font-size: 12px;
       }
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }
