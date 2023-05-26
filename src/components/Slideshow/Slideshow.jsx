@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-
 function Slideshow({ pictures }) {
     // Set defaut Index to 0 (1st picture from the array)
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -23,7 +22,6 @@ function Slideshow({ pictures }) {
                 <img className='right-arrow' src='/assets/next.svg' alt='next' onClick={goToNext} />
             </div>
 
-
             {
                 // map through pictures to get each url and add an index
                 pictures.map((picture, index) => {
@@ -37,7 +35,6 @@ function Slideshow({ pictures }) {
                         </div>
                     )
                 })}
-
         </div>
     )
 }
