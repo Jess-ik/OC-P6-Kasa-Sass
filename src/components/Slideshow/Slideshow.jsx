@@ -17,7 +17,7 @@ function Slideshow({ pictures }) {
     return (
         <div className='slider-container'>
             {/* Arrows nav -- hidden if only 1 img -- call goToPrevious / goToNext functions on click*/}
-            <div className={pictures.length === 1 ? 'hide' : 'slider-arrows'}>
+            <div className={pictures.length <= 1 ? 'hide' : 'slider-arrows'}>
                 <img className='left-arrow' src='/assets/prev.svg' alt='previous' onClick={goToPrevious} />
                 <img className='right-arrow' src='/assets/next.svg' alt='next' onClick={goToNext} />
             </div>
@@ -29,7 +29,7 @@ function Slideshow({ pictures }) {
                         // for each picture, show it if match current index + show matching img + update counter if >1img
                         <div className={index === currentIndex ? 'slider-img' : 'hide'} key={index}>
                             <img key={index} src={picture} alt={`Aperçu nº${currentIndex + 1}`} />   
-                            <div className={pictures.length === 1 ? 'hide' : 'slider-count'}>
+                            <div className={pictures.length <= 1 ? 'hide' : 'slider-count'}>
                                 {currentIndex + 1}/{pictures.length}
                             </div>
                         </div>
