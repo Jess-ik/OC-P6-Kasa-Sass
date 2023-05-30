@@ -21,17 +21,18 @@ function Slideshow({ pictures }) {
                 <img className='left-arrow' src='/assets/prev.svg' alt='previous' onClick={goToPrevious} />
                 <img className='right-arrow' src='/assets/next.svg' alt='next' onClick={goToNext} />
             </div>
+            {/* Show counter if more than 1 picture */}
+            <div className={pictures.length <= 1 ? 'hide' : 'slider-count'}>
+                {currentIndex + 1}/{pictures.length}
+            </div>
 
             {
                 // map through pictures to get each url and add an index
                 pictures.map((picture, index) => {
                     return (
-                        // for each picture, show it if match current index + show matching img + update counter if >1img
+                        // for each picture, show it if match current index + show matching img
                         <div className={index === currentIndex ? 'slider-img' : 'hide'} key={index}>
-                            <img key={index} src={picture} alt={`Aperçu nº${currentIndex + 1}`} />   
-                            <div className={pictures.length <= 1 ? 'hide' : 'slider-count'}>
-                                {currentIndex + 1}/{pictures.length}
-                            </div>
+                            <img key={index} src={picture} alt={`Aperçu nº${currentIndex + 1}`} />
                         </div>
                     )
                 })}
